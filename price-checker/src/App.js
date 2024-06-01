@@ -1,8 +1,9 @@
 import React from 'react';
+import PricingCard from './components/PricingCard';
 function App() {
   return (
     <div className="App">
-      Hello React
+      <PricingCard />
     </div>
   );
 }
