@@ -1,7 +1,9 @@
-import React from 'react';
-import './PricingCard.css'; // Import the CSS file
+import React, { useState } from 'react';
+import './PricingCard.css';
 
 const PricingCard = () => {
+  // const [isYearly, setIsYearly] = useState(false);
+
   return (
     <div className="pricing-container">
       <div className="pricing-header">
@@ -17,7 +19,7 @@ const PricingCard = () => {
           </div>
           <div className="billing-options">
             <label>
-              <input type="radio" name="billing" value="monthly" />
+              <input type="radio" name="billing" value="monthly" defaultChecked />
               Monthly Billing
             </label>
             <label className="radio-switch">
